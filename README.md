@@ -8,8 +8,8 @@ Later on, this library is used in GNURadio gr-rttyrx.
 ## How to build and install
 
 ```
-git clone https://github.com/CanoRoger/librttywx.git
-cd librttywx
+git clone https://github.com/CanoRoger/rttywx.git
+cd rttywx
 mkdir build
 cd build
 cmake ..
