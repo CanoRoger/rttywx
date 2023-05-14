@@ -43,7 +43,7 @@ It only decodes 50 baud +/- 225 Hz with stop bit length of 1.5 and no parity bit
 
 So far tested, with the German DDK agency, decoding works with inverse = True.
 
-More information on stations available and frequencyes: https://www.dxinfocentre.com/ratt.htm
+More information on stations available and frequencies: https://www.dxinfocentre.com/ratt.htm
 Recommended use of kiwiSDR to get signal online.
 
 ## Credits
