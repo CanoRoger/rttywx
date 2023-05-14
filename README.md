@@ -25,13 +25,10 @@ cd build/src
 ./rtty_rx_from_file 8000 < ../../examples/rtty.wav
 ```
 
-```
-
 To decode a RTTY RAW file in .wav format, you can use 'sox' to convert it first, as follows:
 
 ```
 sox -t raw -r 8000 -b 16 -e signed -c 1 raw.raw raw.wav
-
 ```
 
 To decode the inverse, WAV to RAW:
@@ -39,6 +36,15 @@ To decode the inverse, WAV to RAW:
 ```
 sox rtty.wav --bits 16 rtty.raw
 ```
+
+# Decoder specs
+This decoder expects the two tones to be centered on 2000Hz.
+It only decodes 50 baud +/- 225 Hz with stop bit length of 1.5 and no parity bits.
+
+So far tested, with the German DDK agency, decoding works with inverse = True.
+
+More information on stations available and frequencyes: https://www.dxinfocentre.com/ratt.htm
+Recommended use of kiwiSDR to get signal online.
 
 ## Credits
 
