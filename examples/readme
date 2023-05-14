@@ -1,0 +1,6 @@
+WAV to RAW:
+sox rtty.wav --bits 16 rtty.raw
+
+Record WAV:
+arecord -f S16_LE -r 8000 rtty.wav
+
