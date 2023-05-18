@@ -5,6 +5,8 @@ The decoder code is extracted from fldigi source code, reduced and adapted to be
 
 Later on, this library is used in GNURadio gr-rttyrx.
 
+TO DO: Implement some sort of detector to reduce it from decoding noise. An external squelch is currently necessary.
+
 ## How to build and install
 
 ```
